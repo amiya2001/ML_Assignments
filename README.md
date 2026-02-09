@@ -69,6 +69,8 @@ Each model was evaluated using the following metrics:
 | Naive Bayes | 0.9165 | 0.905571 | 0.979427 | 0.941052 | 0.956189 | 0.805947 |
 | XGBoost | xx | xx | xx | xx | xx | xx |
 
+⸻
+
 7. Observations
 	•	XGBoost and Random Forest achieved the highest overall performance across most metrics.
 	•	Ensemble-based models demonstrated better generalization compared to linear and probabilistic models.
@@ -90,6 +92,8 @@ Among all evaluated models, XGBoost delivered the best overall performance, maki
 	•	Scikit-learn
 	•	XGBoost
 	•	Streamlit (for deployment)
+
+⸻
 
 10. Streamlit Application
 
