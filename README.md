@@ -55,6 +55,8 @@ Each model was evaluated using the following metrics:
 	•	AUC (Area Under ROC Curve)
 	•	MCC (Matthews Correlation Coefficient)
 
+⸻
+
 6. Model Comparision
 
 | Model | Accuracy | Precision | Recall | F1-score | AUC | MCC |
