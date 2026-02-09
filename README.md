@@ -55,6 +55,8 @@ Each model was evaluated using the following metrics:
 	•	AUC (Area Under ROC Curve)
 	•	MCC (Matthews Correlation Coefficient)
 
+6. Model Comparision
+
 | Model | Accuracy | Precision | Recall | F1-score | AUC | MCC |
 |------|----------|-----------|--------|----------|-----|-----|
 | Logistic Regression | 0.9165 | 0.905571 | 0.979427 | 0.941052 | 0.956189 | 0.805947 |
@@ -64,9 +66,6 @@ Each model was evaluated using the following metrics:
 | KNN | 0.9165 | 0.905571 | 0.979427 | 0.941052 | 0.956189 | 0.805947 |
 | Naive Bayes | 0.9165 | 0.905571 | 0.979427 | 0.941052 | 0.956189 | 0.805947 |
 | XGBoost | xx | xx | xx | xx | xx | xx |
-
-
-
 
 7. Observations
 	•	XGBoost and Random Forest achieved the highest overall performance across most metrics.
@@ -90,3 +89,8 @@ Among all evaluated models, XGBoost delivered the best overall performance, maki
 	•	XGBoost
 	•	Streamlit (for deployment)
 
+10. Streamlit Application
+
+A Streamlit-based web application was developed to allow users to upload test data, select models, and view prediction results and evaluation metrics.
+
+(Streamlit deployment link will be added here.)
