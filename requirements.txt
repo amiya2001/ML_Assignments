@@ -1,5 +1,7 @@
-Streamlit
+streamlit
 pandas
 numpy
 scikit-learn
-XGBoost
+xgboost
+matplotlib
+seaborn
