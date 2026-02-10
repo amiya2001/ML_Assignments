@@ -15,7 +15,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.naive_bayes import GaussianNB
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.svm import LinearSVC
+from sklearn.svm import SVC
 #from xgboost import XGBClassifier
 
 st.set_page_config(page_title="Network Intrusion Detection", layout="wide")
@@ -66,7 +66,7 @@ if uploaded_file is not None:
             "Logistic Regression",
             "KNN",
             "Naive Bayes",
-            "Random Forest",
+            "Random Forest","XGBoost",
             "SVM"
             
         ],
@@ -80,11 +80,18 @@ if uploaded_file is not None:
         classifier = GaussianNB()
     elif model_name == "Random Forest":
         classifier = RandomForestClassifier(n_estimators=100, random_state=42)
+    elif model_name == "SVM":
+        classifier = SVC(kernel="linear", probability=True, random_state=42)
     else:
-        classifier = LinearSVC(
-            max_iter=5000,
-            random_state=42
-        )
+        classifier =XGBClassifier(
+            n_estimators=200,
+            max_depth=6,
+            learning_rate=0.1,
+            subsample=0.8,
+            colsample_bytree=0.8,
+            eval_metric="logloss",
+            random_state=42,
+            n_jobs=-1)
 
     pipeline = Pipeline(
         steps=[
