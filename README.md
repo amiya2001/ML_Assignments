@@ -99,4 +99,4 @@ Among all evaluated models, XGBoost delivered the best overall performance, maki
 
 A Streamlit-based web application was developed to allow users to upload test data, select models, and view prediction results and evaluation metrics.
 
-(Streamlit deployment link will be added here.)
+(https://mlassignments-n2qvq4d3jfr6kncrkypx3r.streamlit.app)
